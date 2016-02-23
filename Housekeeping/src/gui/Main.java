@@ -28,7 +28,6 @@ public class Main extends Application {
 
     // or main useragent.
     private static UserAgent userAgent = new UserAgent();
-
     // our login window
     Stage window;
     // our login scene
@@ -101,8 +100,8 @@ public class Main extends Application {
         window.show();
 
         // just temp.
-        //new Housekeeping(userAgent).display();
-        //window.close();
+        new Housekeeping(userAgent).display();
+        window.close();
 
         loginScene.getStylesheets().addAll(this.getClass().getResource("style.css").toExternalForm());
     }

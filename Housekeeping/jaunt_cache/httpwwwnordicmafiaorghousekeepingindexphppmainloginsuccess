@@ -1,0 +1,92 @@
+
+<html>
+<head>
+<link href="resources/index.css" type="text/css" rel="stylesheet">
+<link href="resources/regular.css" type="text/css" rel="stylesheet">
+<link href="resources/jquery-ui.css" type="text/css" rel="stylesheet"/>
+<link href="resources/jquery-ui-timepicker-addon.css" type="text/css" rel="stylesheet"/>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+<title>Nordicmafia housekeeping - Logget inn som Christian</title>
+<script type="text/javascript" src="js/general.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/jquery.ui.datepicker-no.js"></script>
+<script type="text/javascript" src="js/jquery-ui-timepicker-addon.js"></script>
+<script type="text/javascript" src="js/jquery-ui-sliderAccess.js"></script>
+ 
+<link href="../resources/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+<script>
+				$(function() {
+					$( "#pointcodes_dateFrom" ).datetimepicker();
+					$( "#pointcodes_dateTo" ).datetimepicker();
+				});
+			</script>
+</head>
+<body>
+<div class="success"><div class="exp">Vellykket:</div> Du er nå logget inn som <span style="font-weight: bold;">Administrator</span>. </div>
+<div id="mainSiteContainer">
+<div id="header">
+<h1>Velkommen, Christian</h1>
+</div>
+<div id="actualSiteContainer">
+<div id="leftcont">
+<div id="logo">
+<h2><a href="index.php">Nordicmafia</a></h2>
+</div>
+<ul id="leftmenulist">
+<li><a href="index.php?p=users">Brukere</a></li>
+<li><a href="index.php?p=igs">In-game Support</a></li>
+<li><a href="index.php?p=alertsystem">Varslingssystem</a></li>
+<li><a href="index.php?p=forum">Forum</a></li>
+<li><a href="index.php?p=kills">Drapslister</a></li>
+<li><a href="index.php?p=logs">Logger</a></li>
+<li><a href="index.php?p=other">Annet</a></li>
+<li><a href="index.php?p=usersettings">Brukerinstillinger</a></li>
+<li style="background-color: #"><a href="index.php?p=internal">Internt</a></li>
+<li><a href="index.php?p=admin_other">Admin - Annet</a></li>
+<li style="background-image: url('resources/images/menubuttonbg_negative.png');"><a href="index.php?p=main&dologout">Logg ut</a></li>
+<li style="background-image: url('resources/images/menubuttonbg_negative.png');"><a href="../index.php" target="_NEW">Åpne spillet</a></li>
+</ul>
+</div>
+<div id="rightcont">
+<div id="subpageholder">
+<h2>Hovedside</h2>
+<form action="" method="post">
+<textarea style="width: 800px; height: 400px;" placeholder="Her kan du lagre info for de andre i ledelsen..." name="notepadContent">Logg og sidelinker:
+http://www.nordicmafia.org/dev/liveMonitor/
+http://www.nordicmafia.org/dev/inflation.php
+http://www.nordicmafia.org/dev/logs.php?specuser=<brukerid>
+http://www.nordicmafia.org/dev/eventlogs.php?specuser=<brukerid>
+http://www.nordicmafia.org/time.php?ts=<timestamp>
+
+http://www.nordicmafia.org/index.php?p=request_pointcodes
+
+
+Har ordnet slik at vi i ledelsen kan redigere på selve tråder. Spillere har selv mulighet til å endre på innlegg, og skal få ordnet så dem kan få endret på selve hovedtråden dem lager og. Men dere kan i hvert fall endre eventuelle skrivefeil, etc. for brukere ved å gå hit inntil videre:
+
+http://www.nordicmafia.org/index.php?p=threadfix&thread=FORUM-TRÅDENS-ID-HER
+
+Så bytter du da ut FORUM-TRÅDENS-ID-HER med den gjeldene trådens id som du finner i adressfeltet når du går innpå tråden på forumet.
+
+http://www.nordicmafia.org/dev/economyflow/
+
+
+http://i.gyazo.com/0b960003ca325c6e926022a8eb4561ea.png
+:( :( :( :( 
++4 like</textarea><br/>
+<input type="submit" name="updateNotepad" value="Oppdater notepaden">
+</form>
+</div>
+</div>
+<div style="clear: left;"></div>
+</div>
+<div id="footer">
+<span class="infoblock"><span style="font-weight: bold;">www.nordicmafia.org</span></span>
+<span class="infoblock">Eies og drives av <span style="font-weight: bold;">Ellar Development AS</span> (Orgnr: 996347117)</span>
+<span class="infoblock">Kontakt (tlf) Erlend Ellingsen: <span style="font-weight: bold;">+47 920 778 86</span></span>
+<span class="infoblock">Kontakt (tlf) Andrew Larsen: <span style="font-weight: bold;">+47 404 866 63</span></span>
+</div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,509 @@
+
+<html style="background-color: #121212;">
+<head>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8"/>
+<link href="resources/index.css" rel="stylesheet" type="text/css">
+<title>Nordicmafia - Slaget om Norden</title>
+ 
+<script src="js/jquery-1.9.1.js" type="text/javascript"></script>
+<link href="resources/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+ 
+<link type="text/css" href="cometchat/cometchatcss.php" rel="stylesheet" charset="utf-8">
+<script type="text/javascript" src="cometchat/cometchatjs.php" charset="utf-8"></script>
+ 
+<script src="js/clock.js" type="text/javascript"></script>
+<script src="js/countdown.js" type="text/javascript"></script>
+<script src="js/default.js" type="text/javascript"></script>
+<script src="js/message.js" type="text/javascript"></script>
+<script src="js/editprofile.js" type="text/javascript"></script>
+<script src="js/gangsenter.js" type="text/javascript"></script>
+<script src="js/gta.js" type="text/javascript"></script>
+<script src="js/jail.js" type="text/javascript"></script>
+<script src="js/smallscripts.js" type="text/javascript"></script>
+<script src="js/chat.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+ 
+<link href="resources/help.css" rel="stylesheet" type="text/css">
+<link href="resources/news.css" rel="stylesheet" type="text/css"><script type="text/javascript" src="js/mod_formatting.js"></script>
+ 
+</head>
+<body onload="updateClock(); doSetup(); setInterval('updateClock()', 1000); setInterval('jsWait()', 1000);">
+<script>
+					(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+					ga('create', 'UA-43898308-1', 'nordicmafia.org');
+					ga('send', 'pageview');
+				</script>
+<script type="text/javascript">
+				var servertime = '1456222084';
+				var USERID = '4';
+
+				var indexMenuState = '{"main":{"expanded":true,"main":true,"crime":true,"other":true},"other":{"expanded":true,"trade":true,"other":true},"gambling":{"expanded":true,"singleplayer":true,"multiplayer":true},"communication":{"expanded":true,"main":true,"forum":true}}';
+			</script>
+<div id="container">
+<div id="header">
+<a href="index.php?p=news"><img src="resources/images/banner_main_left.png" alt="Nordicmafia" border="0" style="border: 0px;" style="width: 875px;"></a>
+<div id="helpHeader">
+ 
+<span style="float: left;"><i class="fa fa-users"></i> <a href="index.php?p=usersonline">55 aktive spillere</a></span>
+<span style="float: right;">Trenger du hjelp? Spør <span class="blueText"><a href="index.php?p=igs_ucenter">In-Game support</a></span></span>
+<div style="clear: both;"></div>
+</div>
+</div>
+<div id="leftPillar">
+<ul class="pillarList">
+<li class="pillar_category" style="line-height: 16px;" onClick="toggleMenu('main');">
+Hoved
+</li>
+<div id="cat_main" style="display: block;">
+<li class="pillar_subcategory" style="color: #3f6f81;" onClick="toggleSubMenu('main', 'main');">Hoved</li>
+<div id="subcat_main_main" style="display: block;">
+<li class="menuElement"><a href="index.php?p=pointshop">Poenghandel</a></li>
+<li class="menuElement"><a href="index.php?p=pointtransfer">Overfør poeng</a></li>
+<li class="menuElement"><a href="index.php?p=bank">Bank</a></li>
+<li class="menuElement"><a href="index.php?p=businessbank">Bedriftsbanken</a></li>
+<li class="menuElement"><a href="index.php?p=policestation">Politistasjon</a></li>
+<li class="menuElement"><a href="index.php?p=property">Eiendom</a></li>
+<li class="menuElement"><a href="index.php?p=territory">Territorium</a></li>
+<li class="menuElement"><a href="index.php?p=newspaper">Les avis</a></li>
+<li class="menuElement"><a href="index.php?p=airport">Flyplass</a></li>
+</div>
+<li class="pillar_subcategory" onClick="toggleSubMenu('main', 'crime');">Kriminalitet</li>
+<div id="subcat_main_crime" style="display: block;">
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=kriminalitet">Kriminalitet</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=blackmail">Utpressing</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=kill">Drep</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=gta">Biltyveri/Garasje</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=fightclub">Fightclub</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=missions">Oppdrag</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=oc">Organisert Krim</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=cdg">Club dè Gangster</a></li>
+<li class="menuElement"><a href="index.php?p=weedfarm">Hasjplantasje</a></li>
+<li class="menuElement"><a href="index.php?p=hitlist">Hitlist</a></li>
+<li class="menuElement"><a href="index.php?p=weapontraining">Skytetrening</a></li>
+<li class="menuElement"><a style="border-left-color: #584428;" href="index.php?p=jail">Fengsel</a></li>
+</div>
+<li class="pillar_subcategory" style="color: #458140;" onClick="toggleSubMenu('main', 'other');">Annet</li>
+<div id="subcat_main_other" style="display: block;">
+<li class="menuElement"><a href="index.php?p=stock_exchange">Børsen</a></li>
+<li class="menuElement"><a href="index.php?p=hire_bodyguard">Livvaktutleie</a></li>
+<li class="menuElement"><a style="border-left-color: #458140;" href="index.php?p=filmmaking">Filmproduksjon</a></li>
+<li class="menuElement"><a style="border-left-color: #458140;" href="index.php?p=battleroyale">Battle Royale</a></li>
+<li class="menuElement"><a href="index.php?p=modify_car">Modifiser Bil</a></li>
+<li class="menuElement"><a href="index.php?p=streetracing">Streetracing</a></li>
+<li class="menuElement"><a href="index.php?p=hospital">Sykehus</a></li>
+</div>
+</div>
+</ul>
+<div class="extrastyle left">
+</div>
+<ul class="pillarList">
+<li class="pillar_category" style="line-height: 16px;" onClick="toggleMenu('other');">
+Annet
+</li>
+<div id="cat_other" style="display: block;">
+<li class="pillar_subcategory" style="color: #C5B64E;" onClick="toggleSubMenu('other', 'trade');">Handel</li>
+<div id="subcat_other_trade" style="display: block;">
+<li class="menuElement"><a href="index.php?p=buybullets">Kjøp kuler</a></li>
+<li class="menuElement"><a href="index.php?p=bullettransfer">Overfør kuler</a></li>
+<li class="menuElement"><a href="index.php?p=usedcar_buy">Kjøp bruktbil</a></li>
+<li class="menuElement"><a href="index.php?p=usedcar_sell">Selg bruktbil</a></li>
+<li class="menuElement"><a href="index.php?p=buyplane">Kjøp fly</a></li>
+<li class="menuElement"><a href="index.php?p=buyweapon">Kjøp våpen</a></li>
+<li class="menuElement"><a href="index.php?p=buyarmor">Kjøp beskyttelse</a></li>
+<li class="menuElement"><a href="index.php?p=theunderground">The underground</a></li>
+<li class="menuElement"><a href="index.php?p=storage">Varehus</a></li>
+</div>
+<li class="pillar_subcategory" style="color: #458140;" onClick="toggleSubMenu('other', 'other');">Annet</li>
+<div id="subcat_other_other" style="display: block;">
+<li class="menuElement"><a href="index.php?p=killattempts">Mordforsøk</a></li>
+<li class="menuElement"><a href="index.php?p=rankbar">Rankbar</a></li>
+<li class="menuElement"><a href="index.php?p=gangsenter">Gjengsenter</a></li>
+<li class="menuElement"><a href="index.php?p=companypanel">Firmapanel</a></li>
+<li class="menuElement"><a href="index.php?p=gov_auction">Statsauksjon</a></li>
+<li class="menuElement"><a href="index.php?p=newspaper_company">Avisfirma</a></li>
+<li class="menuElement"><a href="index.php?p=newspaper_information">Avisinformasjon</a></li>
+</div>
+</div>
+</ul>
+<div class="extrastyle left">
+</div>
+<ul class="pillarList">
+<li class="pillar_category" style="line-height: 16px;" onClick="toggleMenu('gambling');">
+Gambling
+</li>
+<li class="menuElement"><a href="index.php?p=casino">Casino</a></li>
+<div id="cat_gambling" style="display: block;">
+<li class="pillar_subcategory" style="color: #814141;" onClick="toggleSubMenu('gambling', 'singleplayer');">Enspiller</li>
+<div id="subcat_gambling_singleplayer" style="display: block;">
+<li class="menuElement"><a href="index.php?p=game_blackjack_sp">Blackjack</a></li>
+<li class="menuElement"><a href="index.php?p=game_roulette">Russisk rulett</a></li>
+</div>
+<li class="pillar_subcategory" style="color: #814141;" onClick="toggleSubMenu('gambling', 'multiplayer');">Flerspiller</li>
+<div id="subcat_gambling_multiplayer" style="display: block;">
+<li class="menuElement"><a href="index.php?p=game_poker">Poker <span style="color: #FF0000;">(v.2)</span></a></li>
+<li class="menuElement"><a href="index.php?p=game_lotto">Lotto</a></li>
+<li class="menuElement"><a href="index.php?p=game_numbergame">Nummerspillet</a></li>
+<li class="menuElement"><a href="index.php?p=game_dice">Terningspillet</a></li>
+<li class="menuElement"><a href="index.php?p=game_blackjack_mp">Blackjack multiplayer</a></li>
+</div>
+</div>
+</ul>
+<div class="extrastyle left">
+</div>
+</div>
+<div id="mainContent" class="contentBox">
+<div id="mainClock">
+</div>
+<div style="min-height: 0px; margin-top: 15px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Vi er på jakt etter en til Forum-moderator</div>
+<span style="display: block; color: #E7E7E7;">Publisert 27. Januar 2016 kl. 13:12</span>
+</div>
+<div class="news">
+Kjære spillere!<br/>
+<br/>
+Vi er fortiden på jakt etter enda en Forum-moderator til å kunne assistere oss i ledelsen med å holde forumet ryddig. Nå som forumet har startet å bevege seg i et større aktivitetsnivå og at en av våre moderatorer er å tjener landet sitt i det Norske Forsvaret.<br/>
+<br/>
+Kunne du tenkt deg å hatt stillingen som Forum-Moderator? Du vil fortsatt kunne spille spillet på vanlig måte, drepe spillere osv. Men du vil få litt ekstra 'verv', der du får i oppgave at forums-reglene blir ivaretatt og slette gamle tråder som: OC-tråder og andre salgstårder som ikke er i bruk lenger.<br/>
+<br/>
+Så om du føler at dette er noe for deg, og det vil gi deg glede like mye som vi får glede av det. Så send en søknad til <a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="b5f6ddc7dcc6c1dcd4dbf5dbdac7d1dcd6d8d4d3dcd49bdac7d2">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script>!<br/>
+<br/>
+Søknadsfrist 31 januar.
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Godt nyttår!</div>
+<span style="display: block; color: #E7E7E7;">Publisert 31. Desember 2015 kl. 17:33</span>
+</div>
+<div class="news">
+På vegne av hele ledelsen. Vil jeg ønske dere alle et riktig godt nyttår.<br/>
+<br/>
+Vi håper det vil bli mange gode øyeblikk i neste år også!<br/>
+<br/>
+<br/>
+Godt nyttår!<br/>
+Mvh<br/>
+Nordicmafia Crew
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Drapstider i julen 2015</div>
+<span style="display: block; color: #E7E7E7;">Publisert 24. Desember 2015 kl. 12:11</span>
+</div>
+<div class="news">
+Kjære spillere. Vi har besluttet å holde drap stengt følgende dager i julen i år: <b>24. desember</b>, <b>25. desember</b> og <b>31. desember</b>.<br/>
+<br/>
+Det betyr at drap er åpent på alle andre dager.<br/>
+<br/>
+Vi i Nordicmafia-ledelsen håper dere får en god jul!<br/>
+<br/>
+<i>- Nordicmafia crew</i>
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Poengsalg og 2x rank</div>
+<span style="display: block; color: #E7E7E7;">Publisert 06. November 2015 kl. 00:26</span>
+</div>
+<div class="news">
+Kjære spillere<br/>
+<br/>
+I tidsrommet fredag kl. 00:01 - søndag kl. 23:59 har vi <a href="?p=pointshop" class="bbcode_url">poengsalg</a> samt 2x rank.<br/>
+<br/>
+Til alle nye spillere så betyr dette at man får to ganger vanlig rank progresjon for hver handling som gir rank, med andre ord så går det dobbelt så raskt å komme seg opp til neste rank. Man kan se hvordan man ligger an i forhold til neste rank på <a href="?p=rankbar" class="bbcode_url">rankbar-siden</a>.<br/>
+<br/>
+Nå er det bare å finne frem redbull/kaffe å kose seg.<br/>
+<br/>
+<br/>
+<i>- Nordicmafia Crew</i>
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Facebook konkurranse, vinn en Xbox One m/kinect</div>
+<span style="display: block; color: #E7E7E7;">Publisert 29. Oktober 2015 kl. 13:56</span>
+</div>
+<div class="news">
+Kjære spillere<br/>
+<br/>
+Vi holder en konkurranse på <a href="https://www.facebook.com/nordicmafia.org" class="bbcode_url"><b>facebook</b></a> hvor vinneren kan stikke av med en splitter ny Xbox One m/kinect.<br/>
+<br/>
+Alt du må gjøre for å delta i konkurransen er å like bildet vårt samt legge inn en kommentar. Du kan gjerne legge inn en kommentar hvor du skriver navnet på en venn som du synes fortjener å vinne.<br/>
+<br/>
+En vinner vil bli trukket 1. november.<br/>
+<br/>
+Trykk på bildet under for å gå til konkurransen.<br/>
+<br/>
+<a href="https://www.facebook.com/nordicmafia.org/photos/a.147157075441144.34519.106875332802652/543217279168453" class="bbcode_url"><img style="max-width: 100%;" src="http://nordicmafia.org/nordicmafia_xboxone.png" alt="nordicmafia_xboxone.png" class="bbcode_img"/></a><br/>
+<br/>
+<br/>
+<i>- Nordicmafia Crew</i>
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Har du lyst på 300 poeng?</div>
+<span style="display: block; color: #E7E7E7;">Publisert 18. Oktober 2015 kl. 22:40</span>
+</div>
+<div class="news">
+<span style="font-family:'Verdana'"><span style="font-size:11px">Kjære spillere,<br/>
+<br/>
+Vi har jobbet iherdig med å ferdigstille <a href="?p=game_poker" class="bbcode_url">poker</a> og kan endelig annonsere at den er klar til bruk.<br/>
+<br/>
+Før restarten inneholdt pokerfunksjonen diverse feil, alle disse feilene er rettet opp i.<br/>
+<br/>
+Pokerfunksjonen har også fått implementert et split-pot system, for riktig fordeling av chips.<br/>
+<br/>
+<br/>
+Vi ønsker med dette å holde en liten konkurranse, hvor vinneren kan stikke avgårde med 300 poeng.<br/>
+<br/>
+Alt man trenger å gjøre for å delta er å spille <a href="?p=game_poker" class="bbcode_url">poker</a>.<br/>
+<br/>
+Desto flere runder du deltar i desto høyere vinnersjanse.<br/>
+<br/>
+En tilfeldig vinner av 300 poeng vil bli trukket fredag 25. november.<br/>
+<br/>
+<br/>
+Du må gjerne kommentere hvordan din opplevelse av <a href="?p=game_poker" class="bbcode_url">pokerfunksjonen</a> var.</span></span><br/>
+<br/>
+<br/>
+<i>- Nordicmafia crew</i>
+</div>
+</div>
+</div>
+<div style="min-height: 0px; margin-top: 10px;" class="article">
+<div class="newswrap">
+<div class="newsheadingcontainer">
+<div class="newsheading">Restart på Nordicmafia</div>
+<span style="display: block; color: #E7E7E7;">Publisert 16. Oktober 2015 kl. 18:00</span>
+</div>
+<div class="news">
+Kjære spillere.<br/>
+<br/>
+Velkommen tilbake til Nordicmafia, det har virket tomt her uten dere.<br/>
+<br/>
+Vi har jobbet iherdig de siste ukene for å legge frem endringer som vi tror og håper vil bli tatt godt i mot av dere.<br/>
+<br/>
+Det har aldri tidligere blitt gjort så mange endringer ved en restart som nå.<br/>
+<br/>
+<br/>
+Let's cut to the case! Hva er endret, og hvorfor er det endret?<br/>
+<br/>
+<br/>
+<b>RENTER</b><br/>
+<br/>
+Vi har satt ned renter fra 5% til 2% på beløp under 30 milliarder. Vi har også satt ned renter fra 2.5% til 1% på beløp over 30 milliarder. Vi har gjort dette for å redusere inflasjonsnivået vi har sett tidligere, og fordi vi ikke ønsker at det skal være nødvendig å restarte så ofte som vi har måttet gjøre til nå.<br/>
+<br/>
+<br/>
+<b>UTPRESSING (<i>full rework</i>)</b><br/>
+<br/>
+Fra å være en kjedelig funksjon hvor man maks kunne få 60 000 kr så baserer utpressingsfunksjonen seg nå på prosenter fra offerets penger.<br/>
+<br/>
+Man kan presse ut en spiller for penger på hånd, i banken eller begge deler. Dette øker sannsynlighet for å vinne mer, samt sannsynlighet for å tape mer. Man kan også benytte vitneinfo om man utpresser en bestemt spiller, dette vil da øke vinnersannsynligheten.<br/>
+<br/>
+Merk at penger som er i for eks. bedriftsbanken er trygge fra utpressingfunksjonen, men her får man igjen ikke renter.<br/>
+<br/>
+<br/>
+<b>BLACKJACK (<i>full rework</i>)</b><br/>
+<br/>
+Blackjack har fått et helt nytt moderne grafisk grensesnitt, split og double er også implementert.<br/>
+Dealeren er også &quot;smartere&quot; i den forstand at dealeren nå vil trekke nytt kort på &quot;Soft 17&quot;, for eks. Ess + 6 (som er 7 eller 17).<br/>
+<br/>
+<br/>
+<b>POKER (<i>full rework</i>)</b><br/>
+<br/>
+Poker har fått rettet opp i alle oppdagede feil samt fått ferdigstilt logikken sin og splitpot er implementert.<br/>
+Funksjonen har også fått noen grafiske forbedringer, samt interaktive forbedringer.<br/>
+Vi satser nå på at poker kan benyttes som en vanlig funksjon etter restart. Det er da altså ikke &quot;på eget ansvar&quot; lenger.<br/>
+<br/>
+<br/>
+<b>MER INFORMASJON</b><br/>
+<br/>
+Mer detaljert informasjon om hva som har blitt gjort kan dere lese <a href="http://nordicmafia.org/info_betatestere.txt" class="bbcode_url"><b>her</b></a>.
+</div>
+</div>
+</div>
+</div>
+<div id="rightPillar">
+<ul class="pillarList userInfo">
+<li class="pillar_category">Din Info</li>
+<div id="usernameCont">
+<a href="index.php?p=profile&id=4">Christian</a><br/>
+<div style="margin: 5px 0px 10px 0px;">
+<img src="resources/images/no_avatar.png" style="width: 95px; height: 95px;">
+</div>
+</div>
+<ul id="userInfoNav">
+<li>Rank: <span class="value">Capo Don</span></li>
+<li>Bosted: <span class="value">Oslo</span></li>
+<li>Gjeng: <a href="index.php?p=gangprofile&id=1"><span class="value">Nordicmafia Crew</span></a></li>
+<li>Crew: <span class="value">Ingen</span></li>
+<li>Penger: <span id="money_hand" class="value">2,446 kr</span></span></li>
+<li>Kuler: <span class="value">0 stk</span></li>
+<div class="underline">
+</div>
+<li><div style="text-align: center;">Våpen:</div></li>
+<li><div style="text-align: center;"><span class="value">Ingen</span></div></li>
+<br/>
+<li><div style="text-align: center;">Beskyttelse:</div></li>
+<li><div style="text-align: center;"><span class="value">Ingen</span></div></li>
+<div class="underline">
+</div>
+<li>
+<div style="text-align: center; padding-bottom: 5px; padding-top: 5px;" onMouseEnter="showUserInfoTooltip('tooltipExplanation_life');" onMouseLeave="hideUserInfoTooltip('tooltipExplanation_life');">
+Liv: 100%
+<div style="width: 128px; height: 12px; border: 1px solid #6B6D6A; margin-right: 5px; text-align: left; margin: 5px auto 5px auto;">
+<img src="resources/images/nmbar.jpg" style="width: 128px; height: 12px;" alt="liv">
+</div>
+<div class="userInfoTooltip" id="tooltipExplanation_life" style="margin-top: -40px;">
+<div class="toolTipContentBox">
+<div class="bHeader">
+<span style="color: #FFF;">Liv</span>
+</div>
+<div class="defpadding" style="color: #A7A7A7;">
+<span style="font-weight: normal;">Går livet ditt til <span style="font-weight. bold;">0%</span> dør du. Blir du skutt på mister du liv. Liv kan fylles opp på <a href="index.php?p=hospital">sykehuset</a>.</span>
+</div>
+</div>
+<div class="extrastyle right" style="margin-top: -10px;">
+</div>
+</div>
+</div>
+</li>
+<li>
+<div style="text-align: center; padding-bottom: 5px; padding-top: 5px;" onMouseEnter="showUserInfoTooltip('tooltipExplanation_energy');" onMouseLeave="hideUserInfoTooltip('tooltipExplanation_energy');">
+Energi: 100/100
+<div style="width: 128px; height: 12px; border: 1px solid #6B6D6A; margin-right: 5px; text-align: left; margin: 5px auto 5px auto;">
+<img src="resources/images/nmbar.jpg" style="width: 128px; height: 12px;" alt="rankbar">
+</div>
+<div class="userInfoTooltip" id="tooltipExplanation_energy">
+<div class="toolTipContentBox">
+<div class="bHeader">
+<span style="color: #FFF;">Energi</span>
+</div>
+<div class="defpadding" style="color: #A7A7A7;">
+<span style="font-weight: normal;">Enkelte handlinger i spillet krever energi, du får automatisk <span style="font-weight: bold;">5</span> energi hvert <span style="font-weight: bold;">tiende minutt</span>.</span>
+</div>
+</div>
+<div class="extrastyle right" style="margin-top: -10px;">
+</div>
+</div>
+</div>
+</li>
+<li>
+<div style="text-align: center;">Rankbar: 0%
+<div style="width: 128px; height: 12px; border: 1px solid #6B6D6A; margin-right: 5px; text-align: left; margin: 5px auto 5px auto;">
+<img src="resources/images/nmbar.jpg" style="width: 0px; height: 12px;" alt="rankbar">
+</div>
+</div>
+</li>
+</ul>
+</ul>
+<div class="extrastyle right">
+</div>
+<ul class="pillarList">
+<li class="pillar_category" style="line-height: 16px;" onClick="toggleMenu('communication');">
+Kommunikasjon
+</li>
+<div id="cat_communication" style="display: block;">
+<li class="pillar_subcategory" style="color: #3f6f81;" onClick="toggleSubMenu('communication', 'main');">
+Hoved
+<div id="actionlogCounter_collapsed" style="display: none; float: right; line-height: 18px; margin-right: -20px; margin-top: 0px; background-color: #9A5300; border: 1px solid #000; text-align: center; border-radius: 4px;">
+<a href="index.php?p=actionlog"><span style="padding: 3px; color: #FFF; ">0</span></a>
+</div>
+<div style="clear: right;"></div>
+</li>
+<div id="subcat_communication_main" style="display: block;">
+<li class="menuElement"><a href="index.php?p=inbox">Innboks</a></li>
+<li class="menuElement">
+<div style="float: left;"><a href="index.php?p=actionlog">Handlingslogg</a></div>
+<div style="float: right; margin-right: 5px; margin-top: 3px; background-color: #9A5300; border: 1px solid #000; text-align: center; border-radius: 4px;">
+<span style="padding: 2px;">0</span>
+</div>
+<div style="clear: both;"></div></li>
+<li class="menuElement"><a href="index.php?p=newpm">Send melding</a></li>
+<li class="menuElement"><a href="index.php?p=outbox">Utboks</a></li>
+<li class="menuElement"><a href="index.php?p=editprofile&spi=2">Kontakter</a></li>
+<li class="menuElement"><a href="index.php?p=chat">Chat</a></li>
+</div>
+<li class="pillar_subcategory" style="color: #3f6f81;" onClick="toggleSubMenu('communication', 'forum');">Forum</li>
+<div id="subcat_communication_forum" style="display: block;">
+<li class="menuElement"><a href="index.php?p=forum&c=0">Generelt forum</a></li>
+<li class="menuElement"><a href="index.php?p=forum&c=1">Salg/Søknad forum</a></li>
+<li class="menuElement"><a href="index.php?p=forum&c=2">CDG-forum</a></li>
+<li class="menuElement"><a href="index.php?p=forum&c=3">Offtopic-forum</a></li>
+<li class="menuElement"><a href="index.php?p=forum&c=4">Gjengforum</a></li>
+</div>
+</div>
+</ul>
+<div class="extrastyle right">
+</div>
+<img src="resources/images/system_top.png" alt="System top">
+<ul class="pillarList system">
+<li><a href="index.php?p=news">Hovedside</a></li>
+<li><a href="index.php?p=pointshop">Poenghandel</a></li>
+<li><a href="index.php?p=igs_ucenter">In-game Support</a></li>
+<li><a href="index.php?p=registry">Registersøk</a></li>
+<li><a href="index.php?p=usersonline">Spillere pålogget</a></li>
+<li><a href="index.php?p=editprofile">Rediger profil</a></li>
+<li><a href="index.php?p=mobiledevices">Mobile enheter</a></li>
+<li><a href="index.php?p=recruitment">Verv en venn</a></li>
+<li><a href="index.php?p=stats_user">Din statistikk</a></li>
+<li><a href="index.php?p=stats">Spillstatistikk</a></li>
+<li><a href="index.php?p=todaysdeaths">Dagens mord</a></li>
+<li><a href="index.php?p=faq">FAQ</a></li>
+<li><a href="index.php?p=contactinfo">Kontaktinformasjon</a></li>
+<li><a href="index.php?p=demand_overview">Etterspørselsoversikt</a></li>
+<li><a href="index.php?p=devupdates">Utvikleroppdateringer</a></li>
+<li><a href="housekeeping/index.php" style="color: #0279E7; font-weight: bold;">Housekeeping</a></li><li><a href="/utvikling" style="color: #0279E7; font-weight: bold;">Gå til utviklingssiden</a></li>
+<div style="text-align: center;">
+<form action="logout.php" method="post" class="logoutform" style="padding-bottom: 10px;">
+<button type="submit" name="loggut"><i class="fa fa-sign-out"></i> Logg ut!</button>
+</form>
+</div>
+</ul>
+<div class="extrastyle right system" style="margin-top: -10px;">
+</div>
+<div style="text-align: center;">
+<a href="https://www.facebook.com/nordicmafia.org" target="_blank"><img src="resources/images/social/social_facebook.png" style="border: 0px;"></a>
+<a href="http://tinyurl.com/acqhouk" target="_blank"><img src="resources/images/social/social_skype.png" style="border: 0px;"></a>
+</div>
+</div>
+<div style="clear: both;">
+</div>
+</div>
+<div id="footer">
+<div style="width: 380px; margin: 0px auto 0px auto;">
+Eies og drives av <span style="font-weight: bold;">Ellar Development AS</span>. Kontakt: <a href="/cdn-cgi/l/email-protection#80f3f5f0f0eff2f4c0e5ecece1f2aeeeef"><span class="__cf_email__" data-cfemail="bbc8cecbcbd4c9cffbded7d7dac995d5d4">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+/* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>.
+<a href="extra/terms.html" target="_blank">Regler og vilkår</a>
+</div>
+</div>
+ 
+ 
+ 
+<script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
+</html>
+

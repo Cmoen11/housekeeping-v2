@@ -10,6 +10,7 @@ import gui.Main;
 
 public class Login {
 
+
     private String username,password;
 
     /**
@@ -51,12 +52,14 @@ public class Login {
         UserAgent userAgent = Main.getUserAgent();
         String post = "username="+username+"&password="+password+"&login=Logg+inn";
 
+
         // try to send the request to the server
         try{
+            userAgent.setCacheEnabled(true);
             // send the request
             userAgent.sendPOST("http://www.nordicmafia.org/login.php", post);
 
-            // update the current useragent.
+            // update the current useragent
             Main.setUserAgent(userAgent);
         }catch(JauntException e){         //if an HTTP/connection error occurs, handle JauntException.
             System.err.println(e);
@@ -76,6 +79,7 @@ public class Login {
     }
     private boolean doLoginHousekeeping(String password) {
         UserAgent userAgent = Main.getUserAgent();
+        userAgent.
         String post = "loginpwd="+password+"&dologin=Logg+inn";
         // try to send the request to the server
         try{
